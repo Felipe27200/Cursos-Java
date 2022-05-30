@@ -1,0 +1,76 @@
+4.28 mostrar en pantalla lo que indican los puntos modificando el siguiente codigo para
+que esto suceda (no modifique el codigo solo inserte llaves y sangría):
+
+Código:
+
+if (y == 8)
+if (x == 5)
+System.out.println("@@@@@");
+else
+System.out.println("#####");
+System.out.println("$$$$$");
+System.out.println("&&&&&");
+
+a) suponiendo que x = 5 y Y = 8, se produce la siguiente salida:
+
+@@@@@   
+$$$$$   
+&&&&&
+             
+if (y == 8)
+{
+  if (x == 5)
+  System.out.println("@@@@@")
+}
+else
+  System.out.println("#####");
+
+System.out.println("$$$$$");
+System.out.println("&&&&&");
+
+b) suponiendo que x = 5 y y = 8, se produce la siguiente salida:
+@@@@@
+$$$$$
+
+
+if (y == 8)
+  if (x == 5)
+    System.out.println("@@@@@");
+  else 
+    System.out.println("#####");
+
+  System.out.println("$$$$$");
+  System.out.println("&&&&&");
+
+c) Suponiendo que x = 5 y y = 8, se produce la siguiente salida:
+   @@@@@
+
+  if (y == 8)
+  {
+    if (x == 5)
+      System.out.println("@@@@@");
+  }
+  else
+  {
+    System.out.println("#####");
+    System.out.println("$$$$$");
+    System.out.println("&&&&&");
+  }
+
+d) Suponiendo que x = 5 y y = 7, se la siguiente salida.
+
+   #####
+   $$$$$
+   &&&&&
+   
+   if (y == 8)
+   {
+     if (x == 5)
+       System.out.prinln("@@@@@");
+   }
+   else
+   {
+     System.out.println("#####");
+     System.out.println("$$$$$");
+     System.out.println("&&&&&");
+   }

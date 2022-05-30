@@ -1,0 +1,31 @@
+Crear un programa que determine el salario de un empleado
+
+inicializar variables
+
+recibir del usuario una lista de 3 empleados, el numero de horas que
+cada uno trabajo la semana pasada y la tarifa de horas de cada uno.
+
+el programa debe establecer si el empleado ha trabajado mas de 40 horas y
+pagar cuota y media por cada hora trabajada de más.
+
+Al final se debe mostrar el sueldo bruto de cada empleado.
+
+Segundo refinamiento
+
+Mientras contador se menor o igual a 3 
+
+  Pedir al usuario que introduzca el nombre del empleado,
+  el número de horas que trabajo la semana pasada y la 
+  tarifa por horas de cada uno.
+
+  Determinar el pago de las primeras 40 horas o menos en cuota normal, es 
+  decir, la tarifa por hora multiplicada por esas 40 horas o menos.
+
+  Si se excedieron las 40 horas trabajadas pagar cuota y media por cada 
+  hora extra, restar las 40 horas y dejar solo el exceso, el exceso se 
+  multiplica por la tarifa por hora y ese resultado es sumado a su mitad
+  y luego se suma al valor de las 40 horas trabajada con cuota normal.
+
+  Sumar 1 a contador
+
+  imprimir el sueldo bruto de cada empleado.

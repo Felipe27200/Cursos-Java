@@ -1,0 +1,6 @@
+// fig. 1.11
+package com.personajes;
+
+public class Enemigo {
+
+}

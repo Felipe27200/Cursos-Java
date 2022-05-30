@@ -1,0 +1,13 @@
+public class PruebaPaqueteDeCartas 
+{
+  public static void main(String[] args)
+  {
+	PaqueteDeCartas miPaqueteDeCartas = new PaqueteDeCartas();
+	miPaqueteDeCartas.barajar();
+	
+	for (int carta = 1; carta <= 5; carta++)
+	{
+	  System.out.printf("%-20s%n", miPaqueteDeCartas.repartirCarta());
+	}
+  }
+}

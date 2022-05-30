@@ -1,0 +1,19 @@
+Hacer un programa que determine el mayor de 10 numeros
+
+inicializar las variables
+
+recibir del usuario los 10 numeros luegos determinar cuál es el mayor
+
+imprimir el mayor en pantalla
+
+Segundo refinamiento
+
+inicializar mayor en cero.
+
+Mientras contador sea menor o igual a 10 
+
+  Pedir al usuario que introduzca el siguiente número
+  comparar ese numero con mayor, y si el numero es >
+  que mayor el numero sera ahora mayor.
+
+Imprimir en pantalla el número más grande.

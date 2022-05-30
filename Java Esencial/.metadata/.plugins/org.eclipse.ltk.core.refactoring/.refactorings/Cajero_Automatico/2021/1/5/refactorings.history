@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Redenominar tipo «ConversorDeMonedas» como «Conversor»&#x0D;&#x0A;- Proyecto original: «Cajero_Automatico»&#x0D;&#x0A;- Elemento original: «ConversorDeMonedas»&#x0D;&#x0A;- Elemento redenominado: «Conversor»&#x0D;&#x0A;- Actualizar referencias a elemento refactorizado&#x0D;&#x0A;- Actualizar apariciones textuales en comentarios y cadenas de texto" description="Redenominar tipo «ConversorDeMonedas»" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{ConversorDeMonedas.java[ConversorDeMonedas" matchStrategy="1" name="Conversor" qualified="false" references="true" similarDeclarations="false" stamp="1611695325470" textual="false" version="1.0"/>
+</session>

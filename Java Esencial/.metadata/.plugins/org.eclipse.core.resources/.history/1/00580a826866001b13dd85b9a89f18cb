@@ -1,0 +1,8 @@
+// fig. 1.11
+package com.personajes;
+
+public class Enemigo extends Personaje{
+	public Enemigo(int posicionX, int posicionY) {
+		super(posicionX, posicionY);
+	}
+}

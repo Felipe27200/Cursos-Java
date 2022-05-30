@@ -1,0 +1,18 @@
+Ejercicios
+6.12
+
+a) 1 <n<= 2. n = 1 + numerosAleatorios.nextInt(2);
+b) 1<=n<=100. n = 1 + numerosAleatorios.nextInt(100);
+c) 0<=n<=9. n = numerosAleatorios.nextInt(10);
+d) 1000<=n<=1112. n = 1000 + numerosAleatorios.nextInt(113);
+e) -1<=n<=1. n = numeroAleatorios.nextInt(3) - 1;
+f) -3<=n<11. n = numerosAleaotorios.nexInt(15) - 3;
+
+6.13
+a) 2,4,6,8,10. n = 2 * (numerosAleatorios.nextInt(5) + 1);
+b) 3,5,7,9,11. n = 2 * (numerosAleatorios.nextInt(5) + 1) + 1;
+c) 6,10,14,18,22. n = 2 * (2 * (numerosAleatorios.nextInt(5) + 1) + 1);
+
+Aquí podemos observar que el punto "b" es el patrón de "a" + 1, por lo que copiamos la
+instrucción y le sumamos 1 para tener el resultado correcto y finalmente "c" es el
+doble de "b" entonces copiamos la instrucción y la * 2 para obtener el patrón.

@@ -1,0 +1,158 @@
+Ejercicios Capítulo 5
+5.3
+a) Sumar los enteros impares de 1 a 99 con una instruccion for.
+Suponga que se declararon las variables suma y cuenta.
+
+  for (int cuenta = 1; cuenta <= 99; cuenta += 2)
+  {
+    suma += cuenta;
+  }
+
+b) Calcular el valor de 2.5 elevado a la potencia de 3, mediante el
+   método pow.
+
+   double potencia = Math.pow(2.5, 3);
+
+c) Imprimir los enteros del 1 al 20, utilizando un ciclo while y la
+   variable contador i. Suponga que la variable i se ha declarado, 
+   pero no se ha inicializado. Imprima solamente cinco enteros por 
+   línea.
+   [Sugerencia: use el  cálculo de i % 5. Cuando el de esta expresion sea
+    0, imprima un carácter de nueva línea; de lo contrario, imprima un 
+    carácter de tabulación. Suponga que este código es una aplicación. 
+    Utilice el método System.out.println() para el carácter de nueva línea
+    y el método System.out.print('\t') para producir el carácter de tabulación.]
+
+    while (i <= 20)
+    {
+      if (i % 5 == 0)
+      {
+        System.out.println();
+        System.out.printf("%d", i);
+      }
+      else
+      {
+        System.out.printf("%d", i);
+        System.out.print('\t');
+      }
+
+      i++;
+    }
+
+    Su forma más breve y que cumple la misma función sería:
+
+    while (i <= 20)
+    {
+      System.out.print(i);
+
+      if (i % 5 == 0)
+        System.out.println();
+      else 
+        System.out.print('\t');
+     
+      ++i;
+    }
+
+d) Ahora con for
+
+   for (i = 1; i <= 20; i++)
+   {
+      if (i % 5 == 0)
+      {
+        System.out.println();
+      }
+      else
+      {
+        System.out.printf("%d", i);
+        System.out.print('\t');
+      }
+   }
+
+    Su forma más breve y que cumple la misma función sería:
+
+    for (i = 1; i <= 20; i++)
+    {
+      System.out.print(i);
+
+      if (i % 5 == 0)
+        System.out.println();
+      else 
+        System.out.print('\t');
+    }
+
+5.4] Encuentre el error en cada uno de los siguientes segmentosde código,
+     y explique cómo corregirlo:
+
+a) i = 1;
+
+   while (i <= 10);
+     ++i;
+   } 
+
+   Este código esta declarado con una variedad de errores, primero la variable
+   no fue declarada correctamente, pues no se ha definido su tipo; segundo while
+   esta declarado con un punto y coma seguido de su condición de continuación de
+   ciclo lo que genera un ciclo infinito ya que la condición no se vuelve false,
+   y para terminar en la última línea de código se encuentra una llave de cierre
+   sin su respectiva llave de apertura.
+
+   Para corregir los errores del código anterior se deben seguir los siguientes
+   pasos:
+
+   Primero hay que especificar un tipo entero para la variable contador i, para 
+   inicializarla correctamente; segundo en el encabezado de while es necesario
+   eliminar el punto y coma que sigue a la condición para así evitar un ciclo 
+   infinito y por último se puede eliminar la llave de cierre, ya que este ci-
+   clo tiene una sola instrucción (el incremento de i), por lo que eliminar la 
+   llave no conlleva ningún problema.
+
+b) for (k = 0.1; k != 1.0; k += 0.1)
+     System.out.println (k);
+
+   Primero los errores de este son más sutiles y es probable que incluso no afecten
+   el funcionamiento de este código, pero si que tiene prácticas de programación no
+   recomendables.
+
+   La primera práctica que es mejor evitar es que la variable que que determina la
+   continuación de ciclo no sea entera, ya que esto podría terminar en resultados 
+   incorrectos, lo correcto y preferente es que sea entera para no tener resultados
+   inesperado.
+  
+   En la condición de continuación de ciclo determina que el número no puede ser 
+   otro número en específico, lo que se recomienda es establecer que el número
+   no pueda ser superior o inferior a cierta cifra; es mejor declarar k <= 1.0 a
+   k != 1.0.
+
+   La última sería que el paréntesis cerca a println este pegado a él para hacer
+   más comprensible la lectura del código.
+
+c) switch (n)
+   {
+     case 1:
+       System.out.println("El número es 1");
+     
+     case 2:
+       System.out.println("El número es 2");
+       break;
+
+     default:
+       System.out.println("El número no es 1 ni 2");
+       break;
+   }
+
+   El error de este código es que después del case 1, no hay ninguna instrucción
+   break por lo que si n corresponde a case 1 no sólo ejecutara las instrucciones
+   de él también ejecuta las del case 2.
+
+d) El siguiente código debe imprimir los valores 1 a 10:
+
+   n = 1;
+  
+   while (n < 10)
+     System.out.println(n++);
+
+   Su primer error está en la incorrecta declaración de variable ya que esta no
+   posee ningún tipo y hay que especificarlo, segundo el ciclo se iterara sóla-
+   mente 9 veces ya que eso específica su condición que es hasta que n sea menor
+   a 10, para eso hay que declarar que debe ser menor o igual a 10 (n <= 10).  
+ 

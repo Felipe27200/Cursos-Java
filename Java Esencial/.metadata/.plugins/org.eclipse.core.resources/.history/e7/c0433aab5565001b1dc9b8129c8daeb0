@@ -1,0 +1,24 @@
+package claseInterna;
+
+public class ClasesInternas {
+	private int puntuacion;
+	private int numeroDeJugadores;
+	
+	public ClasesInternas(int numeroDeJugadores)
+	{
+		this.numeroDeJugadores = numeroDeJugadores;
+	}
+	
+	public int obtenerPuntuacion()
+	{
+		return puntuacion;
+	}
+}
+
+class Contador{
+	public void incrementarPuntuacion(int puntos)
+	{
+		Clases
+		puntuacion += puntos;
+	}
+}

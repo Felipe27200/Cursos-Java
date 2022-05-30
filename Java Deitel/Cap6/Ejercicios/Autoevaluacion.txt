@@ -1,0 +1,53 @@
+Solución ejercicios
+6.4
+a) public double hipotenusa(double lado1, double lado2)
+b) public int menor(int x, int y, int z)
+c) public void instrucciones()
+d) public float intAFloat(int numero)
+
+6.5 Encontrar errores, corregir y explicar cómo:
+
+a) void g()
+   {
+     System.out.println("Dentro del metodo g");
+
+     void h()
+     {
+       System.out.println("Dentro del método h");
+     }
+   }
+
+   Ninguno de los dos métodos tiene modificador de acceso por lo que hay que
+   ponerlo, además un método no puede estar dentro de otro por lo que el método
+   h debe ser declarado fuera de g
+
+b) int suma(int x, int y)
+   {
+     int resultado;
+     resultado = x + y;
+   }
+
+   No se declara la instrucción return seguida de una expresión int que sera el 
+   el valor de retorno, debe ponerse return resultado = x + y; se puede reemplazar 
+   la variable resultado por la instruccion return x + y;
+
+c) void f(float a);
+   {
+     float a;
+     System.out.println(a);
+   }
+
+   se debe eliminar el punto y coma después del paréntesis de argumentos y también
+   la segunda declaración del parámetro a en el cuerpo del método.
+
+d) void producto()
+   {
+     int a = 6, b = 5, c = 5, resultado;
+     resultado = a * b * c;
+     System.out.printf("El resultado es %d\n", resultado);
+     return resultado;
+   }
+
+   se debe reemplazar la secuencia de escape \n por %n ya que es la que printf 
+   admite, el método es void por lo que no devuelve ningún valor por eso la 
+   instrucción return debe ser eliminada

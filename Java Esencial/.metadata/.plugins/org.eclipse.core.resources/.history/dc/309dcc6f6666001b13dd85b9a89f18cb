@@ -1,0 +1,9 @@
+package com.personajes;
+
+public class Protagonista extends Personaje{
+	private String nombre;
+	
+	public Protagonista(int posicionX, int posicionY) {
+		super(posicionX, posicionY);
+	}
+}

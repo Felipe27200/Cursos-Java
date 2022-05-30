@@ -1,0 +1,28 @@
+Crear un programa que calcule los ingresos de un vendedor segun sus ventas
+
+Refinamiento:
+
+Inicializar variables
+
+recibir los articulos vendidos por el vendedor, sumarlos y sumar el 9% de la suma al
+resultado final.
+
+imprimir los ingresos del vendedor.
+
+Segundo refinamiento:
+
+Inicializar total en cero.
+Inicializar valor en cero.
+Inicializar articulosVendidos en cero.
+
+Pedir al usuario que introduzca el numero correspondiente al articulo o el valor centinela
+para terminar.
+
+Mientras el usuario no haya introducido el valor centinela
+
+  determinar el numero correspondiente al articulo
+  sumar el valor del articulo a Articulos vendidos
+  Pedir al usuario que introduzca el numero correspondiente al articulo o el valor centinela
+  para terminar.
+
+Imprimir el total de los ingresos del vendedor que es articulosVendidos + su 9% + 200$

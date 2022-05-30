@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Redenominar unidad de compilación &apos;claseInterna.ClasesInternas.java&apos; como &apos;Juegos.java&apos;&#x0D;&#x0A;- Proyecto original: «Clases_Internas»&#x0D;&#x0A;- Elemento original: «claseInterna.ClasesInternas.java»&#x0D;&#x0A;- Elemento redenominado: «claseInterna.Juegos.java»" description="Redenominar unidad de compilación &apos;ClasesInternas.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;claseInterna{ClasesInternas.java" name="Juegos.java" references="false" stamp="1612270418484" version="1.0"/>
+</session>

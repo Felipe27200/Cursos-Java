@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Redenominar tipo «com.fechatiempo.Fecha» como «FechaYTiempo»&#x0D;&#x0A;- Proyecto original: «Fecha_Tiempo»&#x0D;&#x0A;- Elemento original: «com.fechatiempo.Fecha»&#x0D;&#x0A;- Elemento redenominado: «com.fechatiempo.FechaYTiempo»&#x0D;&#x0A;- Actualizar referencias a elemento refactorizado&#x0D;&#x0A;- Actualizar apariciones textuales en comentarios y cadenas de texto" description="Redenominar tipo «Fecha»" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.fechatiempo{Fecha.java[Fecha" matchStrategy="1" name="FechaYTiempo" qualified="false" references="true" similarDeclarations="false" stamp="1612913632004" textual="false" version="1.0"/>
+</session>

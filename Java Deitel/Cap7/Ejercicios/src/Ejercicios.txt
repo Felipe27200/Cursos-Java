@@ -1,0 +1,171 @@
+Ejercicios
+7.8 Escriba instrucciones que realicen cada una de las siguientes tareas:
+
+a)  Mostrar le valor del elemento 6 del arreglo f.
+    System.out.println(f[6]);
+
+b)  Inicializar con 8 cada uno de los 5 elementos del arreglo entero unidimensional
+    g.
+
+    for (int i = 0; i < 5; i++)
+    {
+      g[i] = 8;
+    } 
+
+c) Sumar el total de los 100 elementos del arreglo c de punto flotante.
+   total = 0.0;
+
+   for (double elemento : c)
+     total += elemento;
+
+d) Copiar el arreglo a de 11 elementos en la primera porcion del arreglo b, el cual
+   contiene 34 elementos.
+
+   System.arraycopy(a, 0, b, 0, a.length);
+
+e) Determinar e imprimir los valores menor y mayor contenidos en arreglo w con 99
+   elementos de punto flotante.
+
+   double menor = w[0];
+   double mayor = w[0];
+
+   for (double elemento : w)
+   {
+     if (elemento < menor)
+       menor = elemento;
+     
+     if (elemento > mayor)
+       mayor = elemento;
+   }
+
+   System.out.printf("Menor: %.2f%nMayor.2f%n", menor, mayor);
+
+7.9 Considere un arreglo entero t de dos por tres.
+a) Escriba una instrucción que declare y cree a t.
+
+   int[][] t = new int[2][3];
+
+b) Cuántas filas tiene t? tienen 2 filas
+
+c) Cuantas columnas tiene t? tiene 3 filas
+
+d) Cuántos elementos tiene t? tiene 6 elementos; 3 por cada fila
+
+e) Escriba expresiones de acceso para todos los elementos en la fila 1 de t.
+
+   t[0][0]; t[1][1]; t[1][2];
+
+f) Escriba expresiones de acceso para todos los elementos en la fila 2 de t.
+
+   t[1][0]; t[2][1]; t[2][2];
+
+g) Escriba una sola instrucción que asigne cero al elemento de t en la fila 0 y la
+   columna1.
+   
+   t[0][1] =0;
+
+h) Escriba instrucciones individuales para inicializar cada elemento de t con 0.
+
+   t[0][0] =0;
+   t[0][1] =0;
+   t[0][2] =0;
+
+   t[1][0] =0;
+   t[1][1] =0;
+   t[1][2] =0;
+
+i) Escriba una instrucción for anidada que inicialice cada elemento de t en cero.
+
+   for (int f = 0; f < t.length; f++)
+     for (int c = 0; c < t[f].length; c++)
+       t[f][c] = 0;
+
+j) Escriba una instrucción for anidada que reciba como entrada del usuario los 
+   valores de los elementos de t.
+
+   for (int f = 0; f < t.length; f++)
+     for (int c = 0; c < t[f].length; c++)
+     {
+       System.out.printf("fila: %d columna: %d%n", f, c);
+
+       System.out.print("Escriba el valor para el elemento en esa posición: ");
+       t[f][c] = elemento.nextInt();
+     }
+
+k) Escriba una serie de instrucciones que determine e imprima el valor más pequeño
+   en t.
+
+   menor = t[0][0];
+
+   for (int[] elemento : t)
+   {
+     for (int valor : elemento)
+         if (valor < menor)
+            menor = valor;
+   }
+
+   System.out.printf("El elemento más pequeño es: %d%n", menor);
+
+l) Escriba una sola instrucción printf que muestre los elemento en la primera fila
+   de t.
+
+   for (int elemento : t[0])
+     System.out.printf("%d ", elemento);
+
+m) Escriba una instrucción que totalice los elementos de la tercera columna de t.
+   No use repetición.
+
+   total = t[0][2] + t[1][2];
+
+n) Escriba una serie de instrucciones para imprimir el contenido de t en formato
+   tabular. Mencione los índices de columna como encabezados a lo largo de la parte
+   superior, y enumere los índices de fila a la izquierda de cada fila.
+
+   for (int columna = 0; columna < t[0].length; columna++)
+     System.out.printf("f[][%d]	", columna);
+
+   System.out.println();
+
+   for (int fila = 0; fila < t.length; fila++)
+   {
+     for (int columna = 0; columna < t[fila].length; columna++)
+        System.out.printf("%d	", t[fila][columna]);
+
+     System.out.printf("t[%d%n]", fila);
+   }
+
+7.11 Escriba instrucciones que realicen las siguientes operacionines con arreglos
+     unidimensionales:
+
+a) Asignar cero a los 10 elementos del arreglo cuentas de tipo entero.
+
+   for (int indice = 0;indice < cuenta.length; indice++)
+       cuenta[indice] = 0;
+
+b) Sumar uno a cada uno de los 15 elementos del arreglo bono de tipo entero:
+
+   for (indice = 0; indice < bono.length; indice++)
+       bono[indice] += 1;
+
+c) Imprima los cinco valores del arreglo mejoresPuntuaciones de tipo entero en
+   formato de columnas.
+
+   System.out.printf("%7s%n", "Valores:");
+
+   for (int i = 0; i < mejoresPuntuaciones.length; i++)
+     System.out.printf("%07d%n", mejoresPuntuaciones[i]);
+
+7.13 Etiquete los elementos del arreglo bidimensional ventas de tres por cinco,
+     para indicar el orden en el que se establecen en cero, mediante el siguiente
+     fragmento de programa:
+
+     for (int fila = 0; fila < ventas.length; fila++)
+     {
+       for (int col = 0; col < ventas[fila].length; col++)
+         ventas[fila][col] = 0;
+     }
+
+     Orden de asignación:
+     [0][0],[0][1],[0][2],[0][3],[0][4]
+     [1][0],[1][1],[1][2],[1][3],[1][4]
+     [2][0],[2][1],[2][2],[2][3],[2][4]

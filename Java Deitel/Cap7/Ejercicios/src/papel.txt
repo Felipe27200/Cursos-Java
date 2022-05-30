@@ -1,0 +1,62 @@
+      tablero[filaActual][columnaActual] = posicion;
+        
+      if ((filaActual + vertical[numeroMovimiento] <= 7 &&
+           filaActual + vertical[numeroMovimiento] >= 0) &&
+          (columnaActual + horizontal[numeroMovimiento] <= 7 ||
+           columnaActual + horizontal[numeroMovimiento] >= 0))
+      {
+        filaActual += vertical[numeroMovimiento];
+        columnaActual += horizontal[numeroMovimiento];
+        posicion++;
+      }
+      else if ((filaActual + horizontal[numeroMovimiento] <= 7 &&
+                filaActual + horizontal[numeroMovimiento] >= 0) &&
+               (columnaActual + horizontal[numeroMovimiento - 1] <= 7 ||
+                columnaActual + horizontal[numeroMovimiento - 1] >= 0))
+      {
+        if (numeroMovimiento < 0)
+            numeroMovimiento = 7;
+
+        filaActual += vertical[numeroMovimiento - 1];
+        columnaActual += horizontal[numeroMovimiento - 1];
+        posicion++; 
+      }
+      else
+        numeroMovimiento--;
+
+      if (numeroMovimiento < 0)
+          numeroMovimiento = 7;
+
+******************************************************************************
+      if (numeroMovimiento < 0)
+          numeroMovimiento = 7;
+      System.out.print(numeroMovimiento);
+
+      if (numeroMovimiento >= 0 && numeroMovimiento <= 7)
+      {
+        if ((filaActual + vertical[numeroMovimiento] >= 0 &&
+           filaActual + vertical[numeroMovimiento] <= 7) &&
+           (columnaActual + horizontal[numeroMovimiento] >= 0 &&
+            columnaActual + horizontal[numeroMovimiento] <= 7))
+            actual(numeroMovimiento);
+
+        else if (numeroMovimiento > 0 &&
+            (filaActual + vertical[numeroMovimiento - 1] >= 0 &&
+             filaActual + vertical[numeroMovimiento - 1] <= 7) && 
+            (columnaActual + horizontal[numeroMovimiento - 1] >= 0 &&
+             columnaActual + horizontal[numeroMovimiento - 1] <= 7))
+            siguiente(numeroMovimiento);
+        else if (numeroMovimiento == 0)
+        {
+          if ((filaActual + vertical[7] >= 0 && 
+              filaActual + vertical[7] <= 7) &&
+             (columnaActual + horizontal[7] >= 0 &&
+              columnaActual + horizontal[7] <= 7))
+          {
+            actual(7);
+          }
+        }
+        else
+          numeroMovimiento--;
+      }
+    }

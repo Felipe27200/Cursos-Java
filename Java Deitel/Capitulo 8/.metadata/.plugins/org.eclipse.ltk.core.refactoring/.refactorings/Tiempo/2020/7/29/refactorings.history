@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Redenominar unidad de compilación &apos;PruebaTimpo.java&apos; como &apos;PruebaTiempo.java&apos;&#x0D;&#x0A;- Proyecto original: &quot;Tiempo&quot;&#x0D;&#x0A;- Elemento original: &apos;PruebaTimpo.java&apos;&#x0D;&#x0A;- Elemento redenominado: &apos;PruebaTiempo.java&apos;" description="Redenominar unidad de compilación &apos;PruebaTimpo.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{PruebaTimpo.java" name="PruebaTiempo.java" references="false" stamp="1594914400462" version="1.0"/>
+</session>

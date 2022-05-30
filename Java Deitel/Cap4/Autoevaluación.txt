@@ -1,0 +1,66 @@
+4.3)
+ x++;
+ ++x;
+ x += 1;
+ x = x + 1;
+
+4.4)
+a)z = y + x++;
+
+b) if (cuenta > 10)
+     System.out.println("Cuenta es mayor que 10");
+
+c) --x;        podría ser mejor de esta manera: total -= --x; 
+   total -= x;
+
+d) q %= divisor;
+   q = q % divisor;
+
+4.5)
+a. int suma = 0;
+b. int x = 0; Por no leer bien se inicializo la variable con un valor incorrecto, int x = 1;
+c. suma += x;
+d. System.out.printf("La suma es: %d%n", suma);
+
+4.7) quedo mal por una erronéa comprensión del problema y lectura.
+
+4.8)
+a. while (c <= 5)
+   {
+     producto *= c;
+     ++c;
+RTA: el error es que la instrucción while tiene una llave de apertura
+     pero no una de cierre.
+
+Corrección:
+   while (c <= 5)
+   {
+     producto *=c;
+     ++c;
+   }
+
+b. if (genero == 1)
+     System.out.println("Mujer");
+   else;
+     System.out.println("Hombre");
+
+RTA: el error es el punto y coma después del "else", esto ocasiona que sea considerada
+una instrucción vacía por lo que la siguiente instrucción se ejecutaría sin importar la
+condición if...else.
+
+Corrección: 
+if (genero == 1)
+     System.out.println("Mujer");
+   else
+     System.out.println("Hombre");
+
+4.9) ¿Qué está mal en la siguiente instrucción while ?
+     while (z >= 0)
+                  suma += z;
+Lo que esta mal es que la instrucción no tiene un número de repeticiones definidas y 
+tampoco un valor centinela para detener el ciclo, por lo que es un ciclo infinito. °°Mal°°
+
+Corrección:
+en la instrucción while el valor de z nunca se altera y la condicion es siempre verdadera
+lo que crea un ciclo infinito, por lo que hay que establecer una instrucción para que 
+convierta a z en < 0 en algún momento.

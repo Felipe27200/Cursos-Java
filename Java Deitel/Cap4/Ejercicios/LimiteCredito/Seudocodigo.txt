@@ -1,0 +1,34 @@
+Refinamiento:
+
+Primer refinamiento:
+
+Crear un programa que determine si algún cliente ha excedido su credito.
+
+inicializar variables
+
+introducir el numero de cuenta, el saldo inicial, total de todos los articulos cargados por
+el cliente al mes, el total de todos los creditos aplicados a la cuenta al mes y el límite de
+credito permitido.
+
+Determinar si el cliente excedio su credito no.
+
+Segundo refinamiento:
+
+Inicializar saldo en cero
+
+Pedir al usuario que introduzca el numero de cuenta o el centinela.
+
+  Mientras el usuario no usa el valor centinela:
+  
+    Pedir al usuario que introduzca el saldo inicial, 
+    el total de los articulos cargados,
+    el total de los creditos aplicados, 
+    el límite de credito.
+    Sumar a saldo el saldo inical, los cargos y restar los creditos (a cada cuenta).
+    Pedir al usuario que introduzca el numero de cuenta o el centinela.
+  
+Si el usuario introdujo datos:
+
+Mostrar el saldo final de cada cuenta.
+determinar e imprimir en pantalla si el usuario excedio el limite de credito: 
+"Se excedio el límite de credito".  

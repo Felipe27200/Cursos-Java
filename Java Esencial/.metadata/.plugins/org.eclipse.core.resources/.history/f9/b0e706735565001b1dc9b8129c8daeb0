@@ -1,0 +1,12 @@
+package claseInterna;
+
+public class ClasesInternas {
+	private int puntuación;
+	private int numeroDeJugadores;
+	
+	
+}
+
+class Contador{
+	
+}

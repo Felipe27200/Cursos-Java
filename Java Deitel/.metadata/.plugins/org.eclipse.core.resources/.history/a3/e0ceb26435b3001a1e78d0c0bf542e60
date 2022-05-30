@@ -1,0 +1,28 @@
+public class PruebaPaqueteDeCartas 
+{
+  public static void main(String[] args)
+  {
+	PaqueteDeCartas miPaqueteDeCartas = new PaqueteDeCartas();
+
+	miPaqueteDeCartas.barajar();
+	String[] mano = miPaqueteDeCartas.mano();
+	
+    while (mano[0] != "Tercios")
+    {
+    	miPaqueteDeCartas.barajar();
+    	mano = miPaqueteDeCartas.mano();
+    }
+	
+	for (int carta = 1; carta <= 5; carta++)
+	{
+	  System.out.printf("%-20s%n", miPaqueteDeCartas.repartirCarta());
+	}
+	
+	for (String tipoMano : mano)
+	{	
+      if (tipoMano != null)
+		System.out.print("Valor Mano: " + tipoMano);
+
+    }
+  }
+}

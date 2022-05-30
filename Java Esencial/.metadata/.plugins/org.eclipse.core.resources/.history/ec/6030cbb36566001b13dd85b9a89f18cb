@@ -1,0 +1,13 @@
+package com.personajes;
+
+public class Personaje {
+	protected int puntosDeVida = 100;
+	protected int posicionX = 0;
+	protected int posicionY = 0;
+	
+	public Personaje(int posicionX, int posicionY)
+	{
+		this.posicionX = posicionX;
+	}
+	
+}

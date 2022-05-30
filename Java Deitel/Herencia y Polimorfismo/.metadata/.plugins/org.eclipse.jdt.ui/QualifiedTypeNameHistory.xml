@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="composicion.EmpleadoPorComision"/>
+<fullyQualifiedTypeName name="composicion.EmpleadoBaseMasComision"/>
+<fullyQualifiedTypeName name="com.herencia.EmpleadoBaseMasComision"/>
+<fullyQualifiedTypeName name="com.empleado.Empleado"/>
+<fullyQualifiedTypeName name="com.fechanacimiento.Fecha"/>
+<fullyQualifiedTypeName name="com.Empleados.EmpleadoPorHoras"/>
+<fullyQualifiedTypeName name="figuras.Figuras"/>
+<fullyQualifiedTypeName name="com.interfaz.empleado.EmpleadoBaseMasComision"/>
+<fullyQualifiedTypeName name="com.interfaz.PorPagar"/>
+</qualifiedTypeNameHistroy>

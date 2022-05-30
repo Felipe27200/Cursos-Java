@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring clone="true" comment="Inferir argumentos de tipo genérico en &apos;Generico&apos;&#x0D;&#x0A;- Proyecto original: «Generico»&#x0D;&#x0A;- Elementos originales:&#x0D;&#x0A;    JavaRefactoringDescriptorComment_destination_pattern=Elemento de destino: «{0}»Main.java&#x0D;&#x0A;- Suponer que clone() devuelve una instancia del tipo receptor&#x0D;&#x0A;- Dejar argumentos de tipo no restringido raw" description="Inferir argumentos de tipo genérico" element1="/src&lt;{Main.java" flags="6" id="org.eclipse.jdt.ui.infer.typearguments" leave="true" stamp="1612055707204" version="1.0"/>
+</session>
